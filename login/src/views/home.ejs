@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <style src=""></style>
+    <title>Web Berita</title>
+</head>
+<body>
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-expand-lg navBar position-fixed w-100">
+        <div class="container-fluid container-md ">
+          <!-- Logo -->
+          <input id="logo"type="image" src="https://github.com/abdisavia/Website-HMIF/blob/main/img/Logo%20HMIF%20remove%20remove.png?raw=true"
+           alt="submit" 
+           style="margin-left : 30px;
+           width : 78px;
+           height : 78px;">
+          <div class="navBar-warnaTP " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="<%= url %>kepengurusan">Kepengurusan</a></li>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Gallery</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle = "dropdown" role="button">
+                  Event
+                </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="" class="dropdown-item">Porsi</a></li>
+                    <li><a href="" class="dropdown-item">Informatika Belajar</a></li>
+                    <li><a href="" class="dropdown-item">It Days</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link"><button class="btnAspirasi">Aspirasi</button></a></li>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="<%= url %>login/logout">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+            
+      <!-- Session 1 (Selamat Datang) -->
+      <section class="isi1">
+        <img src="https://github.com/abdisavia/Website-HMIF/blob/main/img/Vector%201.png?raw=true" alt="" class="wave">
+        <img src="https://github.com/abdisavia/Website-HMIF/blob/main/img/Vector%201.png?raw=true" alt="" class="wave1">
+        <img src="https://github.com/abdisavia/Website-HMIF/blob/main/img/Vector%201.png?raw=true" alt="" class="wave2">
+        <div class="container-md container-isi1">
+            <div class="row">
+              <div class="col-9">
+                <h1 id="selamatD">Selamat Datang</h1>
+                <p id="subtitle">di website <span>HMIF USD</span></p>
+                <p>Website Himpunan Mahasiswa Informatika bertujuan untuk menampung aspirasi Mahasiswa Informatika dan informasi seputar kegiatan - kegiatan yang akan dilaksanakan.</p>
+              </div>
+              <div class="col"></div>
+  
+            </div>
+          </div>
+          
+      </section>
+  
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script>
+
+    const logo=document.getElementById("logo")
+
+    logo.addEventListener("click",(e) => {
+        var a=document.createElement ('a');
+        a.href ("https://www.youtube.com/");
+        document.appendChild(a);
+    })
+</script>
+
+  <style type="text/css">
+    @import url(//db.onlinewebfonts.com/c/6a6c946c81961ceab1711da6da2b26af?family=Akira+Expanded);
+
+*{
+    margin : 0px;
+    padding : 0px;
+}
+
+body{
+    margin:0px;
+    background-color : #2C3333;
+}
+
+.isi1{
+    position : relative;
+    display: flex;
+    align-items : center;
+    width: 100%;
+    height : 650px;
+    background-color : #2C3333;
+    color : white;
+    font-family : "Futura Bk BT", sans-serif;  
+    overflow: hidden;
+}
+
+#subtitle span{
+    font-family : "Futura Md BT", sans-serif;
+    font-weight : 600;
+}
+
+#subtitle{
+    font-size : 40px;
+    width : 400px;
+}
+
+#selamatD{  
+    font-size : 40px;
+    font-family : "akira expanded", sans-serif;
+}
+
+.col-2, .col-9, .row{
+    margin : 0px;
+    padding : 0px;
+    width: 600px;
+}
+
+.col-9 p{
+    text-align:justify;
+    width : 500px;  
+    font-family : "futura Bk BT", sans-serif;
+    font-size : 20px;
+    font-weight: 500;
+}
+
+.container-isi1{ 
+    display:flex;
+    align-items : center;
+    height : 500px;
+}
+
+.navBar{
+    background-image : linear-gradient(rgba(44, 51, 51,1), rgba(44, 51, 51,0));
+    z-index : 10;
+}
+
+.navbar-nav{
+    display : flex;
+    align-items : center;
+}
+
+.navBar-warnaTP a{
+    font-size : 20px;
+    color : white;
+    font-family : poppins, sans-serif;
+}
+
+.dropdown-menu, .dropdown-menu a{
+    background-color : black;
+    font-size : 15px;
+}
+
+.btnAspirasi{
+    padding :5px 15px 5px 15px;
+    border:2px solid white;
+    border-radius : 25px;
+    background : none;
+    color : white;
+}
+
+.btnAspirasi:hover{
+    background-color : white;
+    color : #2C3333;
+}
+
+.row{
+    display : flex;
+    align-items: center;
+    width : 100%;
+}
+
+.col{
+    width : 500px;
+    height : 100px;
+}
+
+.wave{
+    width : 300px;
+    position : absolute;
+    top : 5px;
+    right : -10px;
+    z-index : 5;
+}
+
+.wave1{
+    width : 300px;
+    position : absolute;
+    top : -90px;
+    right : 5px;
+    opacity : 50%;
+    transform : rotateX(180deg);
+    z-index : 4;
+}
+
+.wave2{
+    width : 300px;
+    position : absolute;
+    top: -50px;
+    right : 20px;
+    opacity : 25%;  
+    z-index : 3;
+}
+
+  
+
+  </style>
+
+  <script>
+
+  </script>
+</body>
+</html>
