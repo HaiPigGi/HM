@@ -1,0 +1,139 @@
+@import url(//db.onlinewebfonts.com/c/6a6c946c81961ceab1711da6da2b26af?family=Akira+Expanded);
+
+*{
+    margin : 0px;
+    padding : 0px;
+}
+
+body{
+    margin:0px;
+    background-color : #2C3333;
+}
+
+.isi1{
+    position : relative;
+    display: flex;
+    align-items : center;
+    width: 100%;
+    height : 650px;
+    background-color : #2C3333;
+    color : white;
+    font-family : "Futura Bk BT", sans-serif;  
+    overflow: hidden;
+}
+
+#subtitle span{
+    font-family : "Futura Md BT", sans-serif;
+    font-weight : 600;
+}
+
+#subtitle{
+    font-size : 40px;
+    width : 400px;
+}
+
+#selamatD{  
+    font-size : 40px;
+    font-family : "akira expanded", sans-serif;
+}
+
+.col-2, .col-9, .row{
+    margin : 0px;
+    padding : 0px;
+    width: 600px;
+}
+
+.col-9 p{
+    text-align:justify;
+    width : 500px;  
+    font-family : "futura Bk BT", sans-serif;
+    font-size : 20px;
+    font-weight: 500;
+}
+
+.container-isi1{ 
+    display:flex;
+    align-items : center;
+    height : 500px;
+}
+
+.navBar{
+    background-image : linear-gradient(rgba(44, 51, 51,1), rgba(44, 51, 51,0));
+    z-index : 10;
+}
+
+.navbar-nav{
+    display : flex;
+    align-items : center;
+}
+
+.navBar-warnaTP a{
+    font-size : 20px;
+    color : white;
+    font-family : poppins, sans-serif;
+}
+
+.dropdown-menu, .dropdown-menu a{
+    background-color : black;
+    font-size : 15px;
+}
+
+.logoHM{
+    margin-left : 30px;
+    width : 78px;
+    height : 78px;
+}
+
+.btnAspirasi{
+    padding :5px 15px 5px 15px;
+    border:2px solid white;
+    border-radius : 25px;
+    background : none;
+    color : white;
+}
+
+.btnAspirasi:hover{
+    background-color : white;
+    color : #2C3333;
+}
+
+.row{
+    display : flex;
+    align-items: center;
+    width : 100%;
+}
+
+.col{
+    width : 500px;
+    height : 100px;
+}
+
+.wave{
+    width : 300px;
+    position : absolute;
+    top : 5px;
+    right : -10px;
+    z-index : 5;
+}
+
+.wave1{
+    width : 300px;
+    position : absolute;
+    top : -90px;
+    right : 5px;
+    opacity : 50%;
+    transform : rotateX(180deg);
+    z-index : 4;
+}
+
+.wave2{
+    width : 300px;
+    position : absolute;
+    top: -50px;
+    right : 20px;
+    opacity : 25%;  
+    z-index : 3;
+}
+
+
+
