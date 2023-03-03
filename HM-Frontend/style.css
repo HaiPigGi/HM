@@ -10,12 +10,14 @@ body{
     background-color : #2C3333;
 }
 
+
 .isi1{
     position : relative;
     display: flex;
     align-items : center;
+    justify-content : center;
     width: 100%;
-    height : 650px;
+    height : 750px;
     background-color : #2C3333;
     color : white;
     font-family : "Futura Bk BT", sans-serif;  
@@ -33,7 +35,7 @@ body{
 }
 
 #selamatD{  
-    font-size : 40px;
+    font-size : 50px;
     font-family : "akira expanded", sans-serif;
 }
 
@@ -52,19 +54,22 @@ body{
 }
 
 .container-isi1{ 
-    display:flex;
-    align-items : center;
+    display : flex;
+    justify-content : center;
+
     height : 500px;
 }
 
 .navBar{
-    background-image : linear-gradient(rgba(44, 51, 51,1), rgba(44, 51, 51,0));
+    background-image : linear-gradient(rgba(44, 51, 51,1) , rgba(44, 51, 51,0));
+    /* background-color : rgba(44,51,51,1); */
     z-index : 10;
 }
 
 .navbar-nav{
     display : flex;
     align-items : center;
+    justify-content: end;
 }
 
 .navBar-warnaTP a{
@@ -98,42 +103,86 @@ body{
 }
 
 .row{
-    display : flex;
-    align-items: center;
-    width : 100%;
+    width : 100%;   
 }
 
 .col{
     width : 500px;
-    height : 100px;
 }
 
-.wave{
-    width : 300px;
-    position : absolute;
-    top : 5px;
-    right : -10px;
-    z-index : 5;
+.gmbr1{
+    left : 100px;
+    width : 500px;
+    height : auto;
+    opacity : 100%;
+    margin-right : 50px;
 }
 
-.wave1{
-    width : 300px;
-    position : absolute;
-    top : -90px;
-    right : 5px;
-    opacity : 50%;
-    transform : rotateX(180deg);
-    z-index : 4;
+.backgroundGam1{
+    position : relative;
+    display : flex;
+    justify-content : center;
+    width : 750px;
+    right : -100px;
+    background-color : white;
+    border-top-left-radius: 300px;
+    border-bottom-left-radius: 300px;
+    animation-name : backgroundGam1;
+    animation-duration : 2s;
 }
 
-.wave2{
-    width : 300px;
-    position : absolute;
-    top: -50px;
-    right : 20px;
-    opacity : 25%;  
-    z-index : 3;
+
+.col-9{
+    position : relative;
+    left : 0px;
+    animation-name : col-9Animated;
+    animation-duration: 3s;
 }
+
+@keyframes col-9Animated{
+    from{
+        left : -100px;
+        opacity : 0%;
+    }
+    to{
+        left:0px;
+        opacity:100%
+    }
+}
+
+@keyframes backgroundGam1{
+    from{
+        right : -500px;
+        opacity : 0%;
+    }
+    to{
+        right : -100px; 
+        opacity : 100%;
+    }
+}
+
+
+.isi2{
+    display : flex;
+    align-items : center;
+    background-color : white;
+    width : 100%;
+    height : 700px;
+    font-family : "poppins", sans-serif;
+}
+
+.isi3{
+    background-color : #2C3333;
+    width : 100%;
+    height : 730px;
+    font-family : "poppins", sans-serif;
+}
+
+.card{
+    width : 400px;
+}
+
+
 
 
 
